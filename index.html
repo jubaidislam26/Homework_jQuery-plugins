@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--plugins-->
+    <link rel="stylesheet" href="assets/magnify/css/jquery.jqZoom.css">
+    <link rel="stylesheet" href="assets/WOW/css/animate.css">
+    <!-- CSS link-->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    
+    <title>jquery Plugins</title> 
+  </head>
+  <body>
+
+     <header>
+    <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+              <a class="navbar-brand" href="#">Navbar</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html">jQuery Plugins 1</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="plugins.html">jQuery Plugins 2</a>
+                  </li>
+                  
+                </ul>
+                </div>
+              </nav>
+            </div>
+            </header>
+
+
+  <div class="container">
+    <div class="row">
+
+      <div class="col-md-4">
+        <div class="wrapper text-center">
+          <h1 class="counter">1,234,567</h1>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="wrapper text-center">
+          <h1 class="counter">1,234,567</h1>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="wrapper text-center">
+          <h1 class="counter">1,234,567</h1>
+        </div>
+      </div>
+
+    </div>
+  </div>
+    
+    <section class="wow slideInLeft red" data-wow-duration="5s" data-wow-delay="1s">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h2> This The Text </h2>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="wow slideInRight red" data-wow-duration="5s" data-wow-delay="2s">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h2> This The Text </h2>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="wow fadeInLeft red" data-wow-offset="10" data-wow-duration="5s" data-wow-delay="1s">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h2> This The Text </h2>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="parallax-window" data-parallax="scroll" 
+            data-image-src="images/camera1.jpg"></div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="parallax-window" data-parallax="scroll" 
+            data-image-src="images/camera1.jpg"></div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="parallax-window" data-parallax="scroll" 
+            data-image-src="images/camera1.jpg"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="magni">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <div class="zoom-box">
+              <img src="images/camera1.jpg" width="400" height="350" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- JS link -->
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <!--plugins-->
+    <script src="assets/counter/waypoints.min.js"></script>
+    <script src="assets/counter/jquery.counterup.min.js"></script>
+    <script src="assets/WOW/js/wow.min.js"></script>
+    <script src="assets/parallax/parallax.min.js"></script>
+    <script src="assets/magnify/js/jquery.jqZoom.js"></script>
+    <!--plugins-->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+    <script >
+      $(document).ready(function(){
+
+        //counterup
+        $('.counter').counterUp({
+             delay: 10,
+             time: 1000
+          });
+        //wow js
+        new WOW().init();
+        $(function(){
+           $("img").jqZoom({
+            selectorWidth: 30,
+            selectorHeight: 30,
+            viewerWidth: 800,
+            viewerHeight: 600,
+                     });
+                })
+            })
+    </script>>
+  </body>
+</html>

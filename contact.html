@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--plugins-->
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <!-- CSS link-->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    
+    <title>jquery Plugins</title> 
+  </head>
+  <body>
+
+     <header>
+    <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+              <a class="navbar-brand" href="#">Navbar</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home </a>
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-link" href="contact.html">jQuery Plugins 1 <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="plugins.html">jQuery Plugins 2</a>
+                  </li>
+                  
+                </ul>
+                </div>
+              </nav>
+            </div>
+            </header>
+
+  <section class="slider">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="autoplay">
+              <div><img src="images/camera1.jpg" class="img-fluid"></div>
+              <div><img src="images/camera1.jpg" class="img-fluid"></div>
+              <div><img src="images/camera1.jpg" class="img-fluid"></div>
+              <div><img src="images/camera1.jpg" class="img-fluid"></div>
+              <div><img src="images/camera1.jpg" class="img-fluid"></div>
+              <div><img src="images/camera1.jpg" class="img-fluid"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1 class="text-center">jQuery Multi Countdown Plugin Examples</h1>
+            <div class="jumbotron countdown show" data-Date='2020/12/10 13:37:53'>
+              <h2 class="text-center">Special Offer</h2>
+              <div class="running">
+                <timer>
+                  <span class="days"></span>:<span class="hours"></span>:<span class="minutes"></span>:<span
+                  class="seconds"></span>
+                </timer>
+                <div class="break"></div>
+                <div class="labels"><span>Days</span><span>Hours</span><span>Minutes</span><span>Seconds</span>
+                </div>
+                <div class="break"></div>
+                <div class="text">Offer Ended</div>
+                <div class="break"></div>
+                <button>Buy Now!</button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="hover">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <div id="main">
+
+                  <h2>Fixed Tooltips</h2>
+                  <h3>9. Top Tooltip</h3>
+                  <div id="test9" class="item">Hover Me!</div>
+                  <h3>10. Right Tooltip</h3>
+                  <div id="test10" class="item">Hover Me!</div>
+                  <h3>11. Bottom Tooltip</h3>
+                  <div id="test11" class="item">Hover Me!</div>
+                  <h3>12. Left Tooltip</h3>
+                  <div id="test12" class="item">Hover Me!</div>
+                  <h3>13. Custom Arrow</h3>
+                  <div id="test13" class="item">Hover Me!</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+  
+    
+    <!-- JS link -->
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <!--plugins-->
+    <script src="assets/slick/slick.min.js"></script>
+    <script src="assets/event/multi-countdown.js"></script>
+    <script src="assets/hover/easyTooltip.min.js"></script>>
+    <!--plugins-->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+    <script >
+      $(document).ready(function(){
+        $('.autoplay').slick({
+          dots:true,
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 2000,
+        });
+        //hover
+        $("#test9").easyTooltip({
+      tooltipPosition: 'relative',
+      content: "I am a sample."
+    });
+
+    $("#test10").easyTooltip({
+      tooltipPosition: 'relative',
+      tooltipDir: "right",
+      content: "I am a sample."
+    });
+
+    $("#test11").easyTooltip({
+      tooltipPosition: 'relative',
+      tooltipDir: "bottom",
+      content: "I am a sample."
+    });
+
+    $("#test12").easyTooltip({
+      tooltipPosition: 'relative',
+      tooltipDir: "left",
+      content: "I am a sample."
+    });
+
+    $("#test13").easyTooltip({
+      tooltipPosition: 'relative',
+      content: "I am a sample.",
+      tooltipArwBorderWidth: 12,
+      tooltipBgColor: "rgba(0,0,0,1)",
+  tooltipFtColor: "#fff",
+    });
+            })
+    </script>
+  </body>
+</html>
